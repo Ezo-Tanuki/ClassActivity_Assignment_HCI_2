@@ -1,5 +1,5 @@
 // Add your answer here
-$(() => {
+$(function() {
     $(".text-contents").hide();
 
     $(".lesson").each(function() {
