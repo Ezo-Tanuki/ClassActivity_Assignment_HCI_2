@@ -3,13 +3,11 @@ $(() => {
     $(".text-contents").hide();
 
     $(".lesson").each(function() {
-
-        $(this).children(".lesson-icon").mouseenter(function() {
+        $(this).children(".lesson-icon").hover(function() {
             $(this).siblings(".text-contents").fadeIn();
-        })
-
-        $(this).children(".lesson-icon").mouseleave(function() {
+        }, function() {
             $(this).siblings(".text-contents").fadeOut();
         });
+
     });
 });
